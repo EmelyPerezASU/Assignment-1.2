@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+	<meta charset="utf-8">
+
+
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Emely Rodriguez Perez">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Form Activity Solution File</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+	<form name="form" action="https://wp.zybooks.com/form-viewer.php" onsubmit="returnvalidateForm ()" method="post">
+		<div>
+			<label for = "fullname"> Full Name </label> 
+				<input type="text" name="fullname"><br><br> 
+		</div>
+		<div>
+			<label for= "email"> Email</label> 
+				<input type= "email" id="email" name="email" required > </input> 
+		</div> 
+		<div>
+			<label for = "PhoneNumber" >Phone number</label>
+				<input type="PhoneNumber" id="PhoneNumber" name="PhoneNumber" autocomplete="off" required> </input> 
+		</div>
+		<div>
+			<fieldset>
+				<legend> Preferred Contact Method: </legend>
+					<input id="Phone" type="radio" name="Phone" value="Phone">
+					<label for="Phone">Phone</label><br>
+					<input id="Email" type="radio" name="Email" value="Email">
+					<label for="Email">Email</label><br>
+			</fieldset>	
+		</div>
+		<div>
+			<label for = "StateOfResident"> Choose your state of resident</label>
+				<input id="StateOfResident" name="StateOfResident" type="text" list="states">
+					<datalist id="states">
+						<select>
+							<option value="State1">Alabama</option>
+							<option value="State2">Alaska</option>
+							<option value="State3">Arizona</option>
+							<option value="State4">Arkansa </option>
+							<option value="State5"> California</option>
+							<option value="State6"> Colorado</option>
+							<option value="State7">Connecticut </option>
+							<option value="State8"> Delaware</option>
+							<option value="State9"> Florida </option>
+							<option value="State10">Georgia </option>
+							<option value="State11"> Hawaii </option>
+							<option value="State12"> Idaho</option>
+							<option value="State13">Illinois </option>
+							<option value="State14"> Indiana</option>
+							<option value="State15">Iowa </option>
+							<option value="State16">Kansas </option>
+							<option value="State17">Kentucky </option>
+							<option value="State18">Louisiana </option>
+							<option value="State19">Maine </option>
+							<option value="State20">Maryland </option>
+							<option value="State21">Massachusetts </option>
+							<option value="State22">Michigan</option>
+							<option value="State23">Minnesota </option>
+							<option Value="state24">Mississippi</option>
+							<option value="State25">Missouri</option>
+							<option value="State26">Montana </option>
+							<option value="State27"> Nebraska</option>
+							<option value="State28">Nevada </option>
+							<option value="State29">New Hampshire </option>
+							<option value="State30">New Jersey </option>
+							<option value="State31"> New Mexico</option>
+							<option value="State32">New York </option>
+							<option value="State33"> North Carolina </option>
+							<option value="state34">North Dakota</option>
+							<option value="State35">Ohio </option>
+							<option value="state36">Oklahoma</option>
+							<option value="State37">Oregon </option>
+							<option value="State38">Pennsylvania </option>
+							<option value="State39"> Rhode Island </option>
+							<option value="State40">South Carolina </option>
+							<option value="State41"> South Dakota</option>
+							<option value="State42"> Tennessee</option>
+							<option value="State43">Texas </option>
+							<option value="State44"> Utah </option>
+							<option value="State45">Vermont </option>
+							<option value="State46">Virginia </option>
+							<option value="State47"> Washington</option>
+							<option value="State48">West Virginia </option>
+							<option value="State49"> Wisconsin</option>
+							<option value="State50"> Wyoming </option>
+						</select>
+					</datalist>
+		</div>
+		<div> 
+			<label for="Comments">Comments:</label>
+	<textarea id="Comments" autocomplete="off"></textarea>
+	</div> 
+
+		<button type="submit" value="Submit"> Submit</button>
+	  </div>
+ 
+	</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
